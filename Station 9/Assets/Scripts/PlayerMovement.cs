@@ -12,7 +12,10 @@ public class PlayerMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     public float turnSmoothVel;
 
-
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     // Update is called once per frame
     void Update()
