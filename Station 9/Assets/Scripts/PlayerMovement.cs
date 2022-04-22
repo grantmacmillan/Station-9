@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
     public static bool canMove = true;
+    public static int crewMembersRescued = 0;
 
     public float speed = 10.0f;
     public float gravity = -45f;

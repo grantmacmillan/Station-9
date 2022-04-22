@@ -11,6 +11,7 @@ public class Terminal : MonoBehaviour
 
     public GameObject terminalUI; //UI pannel that we want to open
     public GameObject interactPrompt;
+    public GameObject playerUI;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class Terminal : MonoBehaviour
     public void OpenTerminal()
     {
         interactPrompt.SetActive(false);
+        playerUI.SetActive(false);
         terminalUI.SetActive(true); //sets terminal visable to player in game view
         terminalIsOpen = true;
         Cursor.lockState = CursorLockMode.None;
@@ -39,6 +41,7 @@ public class Terminal : MonoBehaviour
     public void CloseTerminal()
     {
         interactPrompt.SetActive(true);
+        playerUI.SetActive(true);
         terminalUI.SetActive(false); //sets terminal NOT visable to player in game view
         terminalIsOpen = false;
         Cursor.lockState = CursorLockMode.Locked;
