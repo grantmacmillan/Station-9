@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public static int crewMembersRescued = 0;
 
     public float speed = 10.0f;
-    public float gravity = -45f;
+    public static float gravity = -45f;
     public float jumpHeight = 1.5f;
     Vector3 velocity;
     bool isGrounded;
