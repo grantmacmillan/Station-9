@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
         {
             ZeroGravity();
         }
+        if (playerExitedAirlock && !playerIsOutside)
+        {
+            NormalGravity();
+        }
     }
 
     public void ZeroGravity()

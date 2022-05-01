@@ -15,4 +15,12 @@ public class AirlockEnter : MonoBehaviour
     {
         
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            GameManager.playerIsOutside = false;
+        }
+    }
 }
